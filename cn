@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiaomao Lab | 小猫工作室</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Sans+SC:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-sand: #DED8C9;
+            --text-dark: #2A2A2A;
+            --accent-wood: #5A5245;
+        }
+
+        body { 
+            font-family: 'Noto Sans SC', 'Noto Serif TC', serif; 
+            background-color: var(--bg-sand); 
+            color: var(--text-dark); 
+        }
+        
+        .hero-bg {
+            background: linear-gradient(to bottom, #E5E0D5, #DED8C9);
+        }
+        
+        .luxury-border { border-left: 2px solid var(--accent-wood); }
+
+        /* btn disabled */
+        .btn-disabled {
+            cursor: not-allowed;
+            background-color: rgba(42, 42, 42, 0.4);
+            color: rgba(255, 255, 255, 0.6);
+            pointer-events: none; /* -- */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-[#DED8C9]/95 backdrop-blur-md border-b border-gray-400/10">
+            <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+                <div class="text-xl font-bold tracking-[0.3em] text-gray-800">
+                    XIAOMAO LAB
+                </div>
+        
+                <nav class="flex items-center space-x-8">
+                    <div class="hidden md:flex items-center space-x-4 border-r border-gray-400/30 pr-8 text-[10px]">
+                        <a href="https://xiaomaolab.com/tw/" class="hover:text-gray-900 transition">繁體中文</a>
+                        <span class="text-gray-300">|</span>
+                        <span class="text-gray-900 font-bold">简体中文</span>
+                    </div>
+                    
+                    <div class="btn-disabled px-8 py-2.5 rounded-full text-[10px]">
+                        Coming Soon
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+    <!-- Main Section -->
+    <section class="relative min-h-screen flex items-center justify-center hero-bg pt-20">
+        <div class="text-center px-6 max-w-4xl">
+            <h2 class="text-[10px] uppercase tracking-[1em] mb-12 text-[#5A5245] font-bold">COMING SOON</h2>
+            
+            <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-16 tracking-tight text-gray-900">
+                日本经营管理签证<br>
+                <span class="text-xl md:text-3xl font-light text-gray-400 mt-5 block">专业事业计划书评估与审核</span>
+            </h1>
+
+            <div class="max-w-2xl mx-auto text-left luxury-border pl-10 py-1">
+                <p class="text-sm md:text-base leading-loose text-gray-700 font-light text-justify">
+                    针对日益严格的日本「经营·管理」签证申请，由日本国家资格<b>中小企业诊断士</b>提供专业的事业计划书审核与咨询服务。
+                    <br><br>
+                    创办人为日本本土资深顾问，深谙中国及台湾文化，提供全中文对应。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="absolute bottom-8 w-full text-center text-[9px] tracking-[0.3em] text-gray-400 uppercase">
+        © 2026 小猫工作室 | xiaomaolab.com. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
