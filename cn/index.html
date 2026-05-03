@@ -32,6 +32,16 @@
             color: rgba(255, 255, 255, 0.6);
             pointer-events: none; /* -- */
         }
+        /* QR */
+        .qr-card {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(90, 82, 69, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .qr-card:hover {
+            transform: translateY(-2px);
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -73,6 +83,23 @@
                     <br><br>
                     创办人为日本本土资深顾问，深谙中国及台湾文化，提供全中文对应。
                 </p>
+            </div>
+            <!-- QR  -->
+            <div class="mt-16 flex flex-col md:flex-row items-center justify-center gap-10 qr-card p-10 rounded-3xl max-w-2xl mx-auto">
+                <div class="text-center md:text-left">
+                    <h3 class="text-[10px] tracking-[0.3em] text-[#5A5245] font-bold mb-4 uppercase">Contact</h3>
+                    <p class="text-xs md:text-sm text-gray-600 font-light leading-relaxed mb-2">
+                        如有任何业务垂询，<br class="hidden md:block">请扫描右侧二维码添加微信。
+                    </p>
+                    <p class="text-[9px] text-gray-400 tracking-widest font-bold">ID: XIAOMAO_LAB</p>
+                </div>
+                
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-[#5A5245]/20 to-[#DED8C9]/20 rounded-xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                    <div class="relative w-36 h-36 bg-white p-3 rounded-xl shadow-sm border border-gray-100">
+                        <img src="qr-code.png" alt="WeChat QR Code" class="w-full h-full object-contain">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
